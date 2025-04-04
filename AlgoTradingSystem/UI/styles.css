@@ -1,0 +1,289 @@
+/* Global Styles */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Topbar */
+.topbar {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 200px;
+    background-color: #2c3e50;
+    color: white;
+    padding-top: 80px;
+    position: fixed;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.sidebar a {
+    display: block;
+    color: white;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 18px;
+    border-bottom: 1px solid #34495e;
+}
+
+.sidebar a:hover, .sidebar a.active {
+    background-color: #34495e;
+}
+
+/* Main Content */
+.main-content {
+    margin-left: 200px;
+    padding: 20px;
+    flex-grow: 1;
+    margin-top: 30px; /* Prevent content from clashing with topbar */
+}
+
+/* Title Styles */
+h2 {
+    color: #2c3e50;
+    font-size: 32px;
+}
+
+h3 {
+    color: #34495e;
+    font-size: 24px;
+}
+
+/* Button Styling */
+.btn {
+    background-color: #2c3e50;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 10px 0;
+    display: inline-block;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: #34495e;
+}
+
+/* Form Styling */
+.form-group {
+    margin-bottom: 20px;
+    padding-right: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.form-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: #2c3e50;
+}
+
+/* Strategy Form */
+.strategy-form {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+button[type="button"] {
+    background-color: #2c3e50;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+button[type="button"]:hover {
+    background-color: #34495e;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #2c3e50;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Account Form */
+.account-form {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Status Indicator */
+.status {
+    font-weight: bold;
+    padding: 5px;
+    background-color: #f39c12;
+    color: white;
+    border-radius: 3px;
+    width: fit-content;
+    margin-top: 10px;
+}
+
+/* Checkbox and Select Styling */
+.form-checkbox {
+    margin-right: 10px;
+}
+
+select {
+    padding: 10px;
+    width: 100%;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+select:focus {
+    outline: none;
+    border-color: #2c3e50;
+}
+
+/* Form Inputs */
+input[type="text"], input[type="number"], input[type="password"], input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+input[type="text"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="email"]:focus {
+    outline: none;
+    border-color: #2c3e50;
+}
+
+/* Additional Layout and Button Adjustments */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #2c3e50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #34495e;
+}
+
+/* Spacing Adjustments for Links */
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a.btn {
+    display: block;
+    text-align: center;
+    width: fit-content;
+    margin-top: 20px;
+}
+
+
+/* Login Page Specific Styles */
+
+/* Centering and styling for the login page */
+.login-main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.login-account-form {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-account-form .form-input {
+    width: 100%;
+    max-width: 350px;
+}
+
+.login-account-form .form-group {
+    margin-bottom: 15px;
+}
+
+/* Centering the submit button */
+.login-btn {
+    width: 110%;
+    max-width: 350px;
+    background-color: #2c3e50;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+}
+
+.login-btn:hover {
+    background-color: #34495e;
+}
