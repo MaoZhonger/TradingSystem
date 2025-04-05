@@ -8,7 +8,7 @@ class TradingAPI
     public $secretKey;
     public $curl;
 
-    function __construct($apiKey, $secretKey, $mode = "PAPER")
+    function __construct($mode = "PAPER", $apiKey, $secretKey)
     {
         $prefix = "";
         if($mode == "PAPER")
