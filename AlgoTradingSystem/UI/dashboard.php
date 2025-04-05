@@ -31,7 +31,9 @@ authenticateUser();
 
 <?php
 include "imports.php";
-$AlpacaAPI = new TradingAPI("PKFM85FUQILPCFWLHUA1", "cn8CNxVaEbkZ8yjk3LTZ36efo7KOrcDB1ZZNm1VR", "PAPER");
+
+$settings = json_decode(file_get_contents(dirname(__DIR__, 1)."/engine/settings.json"), true);
+$AlpacaAPI = new TradingAPI($settings["TradingAPI"]["apiKey"], $settings["TradingAPI"]["secretKey"], $settings["TradingAPI"]["mode"]);
 
 printf('<div class="status">Market: %s</div>', ($AlpacaAPI->isMarketOpen() ? "OPEN" : "CLOSED"));
 
