@@ -1,0 +1,1 @@
+{"numOfSelections":5,"tradingParameters":{"horizon":20,"stopLoss":30,"takeProfit":30,"adhereToFilter":true,"weighting":0.01},"filter":{"PE":["<",15],"ROE":[">",20]},"rankFactors":{"PE":{"orderBy":"lowest","weight":2},"ROE":{"orderBy":"highest","weight":1}},"frequency":{"schedule":{"MONDAY":true,"TUESDAY":true,"WEDNESDAY":true,"THURSDAY":true,"FRIDAY":true},"repeatInWeeks":2}}
